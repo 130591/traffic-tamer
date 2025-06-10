@@ -6,6 +6,6 @@ COPY ./conf/upstream_backends.conf /etc/nginx/conf.d/upstream_backends.conf
 
 COPY ./certs/ /etc/nginx/certs/
 
-COPY ./lua/ /etc/nginx/lua/
+# COPY ./lua/ /etc/nginx/lua/
 
-CMD ['nginx', '-g', 'daemon off;']
+CMD [ "nginx", "-g", "daemon off;" ]
